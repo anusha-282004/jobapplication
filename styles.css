@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    color: #f7f5f5;
+    text-align: center; /* Center-align body content */
+    font-size: bold;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #0a2644;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align text within form groups to the left */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="file"],
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f2efef;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #1268e0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}

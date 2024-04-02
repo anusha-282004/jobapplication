@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Job Application Website</h2>
+        <form id="jobApplicationForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <span class="error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+                <span class="error" id="addressError"></span>
+            </div>
+            <div class="form-group">
+                <label for="resume">Resume (PDF or DOCX, max 5MB):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.docx" required>
+                <span class="error" id="resumeError"></span>
+            </div>
+            <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
